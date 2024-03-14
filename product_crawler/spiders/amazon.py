@@ -49,7 +49,6 @@ class AmazonSpider(scrapy.Spider):
             loader.add_css('model_number', 'th:contains("Item model number") + td::text')
             loader.add_css('upc', 'th:contains("UPC") + td::text')
             loader.add_css('part_number', 'th:contains("Part Number") + td::text')
-            # loader.add_css('model_name', 'th:contains("Model Name") + td::text')
             loader.add_css('ratings_count', '#acrCustomerReviewText::text')
             loader.add_css('average_rating', '#acrPopover::attr(title)')
             loader.add_value('listing_url', response.url)
