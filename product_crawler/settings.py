@@ -25,7 +25,7 @@ ZYTE_API_TRANSPARENT_MODE = True
 #     "product_crawler.pipelines.DatabasePipeline": 200,
 # }
 
-FEED_EXPORT_FIELDS = ["platform_product_id", "marketplace_id", "product_title", "currency", "buy_box_price", "manufacturer", "brand", "model_number", "part_number", "model_name", "ratings_count", "average_rating", "listing_url", "image_url", "buy_box_seller", "seller_url"]
+FEED_EXPORT_FIELDS = ["platform_product_id", "platform_marketplace_id", "product_title", "currency", "buy_box_price",  "buy_box_seller", "manufacturer_name", "brand", "model_number",  "upc", "part_number", "ratings_count", "average_rating", "listing_url", "image_url",  "seller_url"]
 
 
 
