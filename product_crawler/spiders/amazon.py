@@ -7,7 +7,7 @@ class AmazonSpider(scrapy.Spider):
 
     def start_requests(self):
         keyword_list = [
-            'targus+briefcase',  
+            'sony+playstation+5',  
         ]
         for keyword in keyword_list:
             amazon_search_url = f'https://www.amazon.com/s?k={keyword}&page=1'
